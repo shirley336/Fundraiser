@@ -1,37 +1,46 @@
-html, body {
-  width: 100%;
-  height: 100%;
-  font-family:Arial, sans-serif;
-  margin: 0;
-  color: #555555
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Connect</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body background="image/bg.jpeg">
+  </body>
+  <body>
 
-}
-.jumbotron {
-  margin-left: 3%;
-  margin-right: 3%;
-  opacity: 0.7 !important;
-}
-.card  {
-  background-color: #EEEEEE
-  padding: 10px
-  margin-bottom: 10px;
-}
-.wrapper {
-  max-width: 600px;
-  margin: auto
-}
+      <div class="jumbotron">
 
-btn btn-success {
-  color: #4B96BB
-}
+        <h1>Connect</h1>
+        <p>Need money to fund upcoming activities? Takes forever to contact the local businesses for fundraisers? Smaller turnout than expected? Well, let it be any of the above, WE HAVE THE SOLUTION! </p>
+        <p>
+          Founded in 2017, Connect is an online fundraising scheduling site that connects on campus organizations to local businesses. Our mission is
+          to provide a platform that introduces convenient, hassle-free, enjoyable, and most importantly, HIGHLY PROFITABLE fundraisers for
+          all organizations here at UCSD. With Connect, scheduling fundraisers can be done right at your fingertips--just select the local business you want
+          to partner up with, and we will do the rest--it's magic!
+        </p>
+        <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+      </div>
+      <div class="container-fluid">
+        <h2> <center>
+          What do you want to sell? </center>  
+        </h2>
+        <div class="row">
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <div class="col-md-4"><img src="image/home_drinks.jpeg" alt="img-responsive" class="img-thumbnail"><a href="#" class="btn btn-success">Drinks</a></div>
+          <div class="col-md-4"><img src="image/home_desserts.jpeg" alt="img-responsive" class="img-thumbnail"><a href="#" class="btn btn-info">Dessert</a></div>
+          <div class="col-md-4"><img src="image/home_meals.jpeg" alt="img-responsive" class="img-thumbnail"><a href="#" class="btn btn-warning">Meals</a></div>
+        </div>
+      </div>
+      <div class="form-wrapper">
+        <form id="post-form">
+          <input type="text" placeholder="Title" name="title" id="title"/>
+          <input type="text" placeholder="Post" name="post" id="post" />
+          <button class="form-submit" id="post-sumbit">Submit</button>
+        </form>
 
-h1 {
-  color: Gray;
-  margin-left: 2%;
-}
-h2 {
-  color: White;
-}
-p{
-  margin-left: 2%;
-}
+      </div>
+      <!-- This is where we anchor stuff -->
+      <div id ="postsWrapper">
+      </div>
